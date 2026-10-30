@@ -13,6 +13,7 @@
 | :--- | :--- | :--- |
 | [`GYM2-matchmaking-system/`](./GYM2-matchmaking-system/) | **交友配對系統**[cite: 2] | 策略模式 (Strategy Pattern) |
 | [`GYM3-card-game-framework/`](./GYM3-card-game-framework/) | **牌類遊戲框架**[cite: 2] | 樣板方法模式 (Template Method Pattern) |
+| [`GYM4A-collision-detection/`](./GYM4A-collision-detection/) | **碰撞偵測＆處理** | 責任鏈模式 (Chain of Responsibility Pattern) |
 
 ---
 
@@ -27,6 +28,11 @@
 * **子專案路徑**：`./GYM3-card-game-framework/`[cite: 2]
 * **主題簡介**：整合「簡易撲克牌比大小」與「簡易 UNO」兩款遊戲，利用樣板方法將共同流程與玩家/牌堆互動抽象化，將重複程式碼減至最低。
 * **詳細說明**：請參考 [GYM3 README](./GYM3-card-game-framework/README.md)
+
+### 3. 責任鏈模式——碰撞偵測＆處理
+* **子專案路徑**：`./GYM4A-collision-detection/`
+* **主題簡介**：開發一維世界的生命碰撞偵測與處理 DEMO 程式，支援 Hero、Water、Fire 多種生物互動與狀態變化，並嚴格遵循開閉原則（OCP），讓未來擴充新生命或碰撞效果時不需修改既有領域模型。
+* **詳細說明**：請參考 [GYM4 README](./GYM4A-collision-detection/README.md)
 
 ---
 
