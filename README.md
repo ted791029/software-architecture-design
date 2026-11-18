@@ -19,6 +19,7 @@
 | [`GYM5B-shortcut-key/`](./GYM5B-shortcut-key/) | **快捷鍵設置機制** | 指令模式 (Command Pattern) |
 | [`GYM5C-map-game/`](./GYM5C-map-game/) | **二維地圖冒險遊戲** | 狀態模式 (State Pattern) |
 | [`GYM5-rpg/`](./GYM5-rpg/) | **真・RPG 之對戰遊戲 (魔王題)** | 策略 / 狀態 / 觀察者 / 責任鏈 (複合設計模式) |
+| [`GYM6A-friends-relationship-analyzer/`](./GYM6A-friends-relationship-analyzer/) | **好友關係分析器** | 轉接器模式 (Adapter Pattern) |
 
 ---
 
@@ -63,6 +64,11 @@
 - **子專案路徑**：`./GYM5-rpg/`
 - **主題簡介**：「進階行為型模式」的最終魔王題。實作兩軍輪流行動的回合制戰鬥系統，包含 10 種技能（水球、火球、自我治療、石化、下毒、召喚、自爆、鼓舞、詛咒、一拳攻擊）與多種異常狀態。綜合運用策略、樣板方法、狀態、觀察者與責任鏈模式，讓新增技能或狀態時不需修改核心戰鬥流程，並以輸入輸出測資驗證結果。
 - **詳細說明**：請參考 [GYM5 README](./GYM5-rpg/README.md)
+
+### 9. 轉接器模式——好友關係分析器
+- **子專案路徑**：`./GYM6A-friends-relationship-analyzer/`
+- **主題簡介**：開發一個能分析共同好友與兩人之間連結 (Connectivity) 的好友關係分析器。在完全不修改 Client 端介面、同事小華的 `SuperRelationshipAnalyzer` 與第三方套件 JGraphT 的前提下，透過轉接器模式銜接彼此不相容的介面與腳本格式，並重複利用既有能力實現 Client 的意圖。
+- **詳細說明**：請參考 [GYM6A README](./GYM6A-friends-relationship-analyzer/README.md)
 
 ---
 
