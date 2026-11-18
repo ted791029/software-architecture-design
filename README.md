@@ -17,6 +17,7 @@
 | [`GYM4-Big2/`](./GYM4-Big2/) | **大老二撲克牌遊戲 (魔王題)** | 策略模式 / 複合設計模式 (OCP) |
 | [`GYM5A-youtube/`](./GYM5A-youtube/) | **YouTube 訂閱機制** | 觀察者模式 (Observer Pattern) |
 | [`GYM5B-shortcut-key/`](./GYM5B-shortcut-key/) | **快捷鍵設置機制** | 指令模式 (Command Pattern) |
+| [`GYM5C-map-game/`](./GYM5C-map-game/) | **二維地圖冒險遊戲** | 狀態模式 (State Pattern) |
 
 ---
 
@@ -51,6 +52,11 @@
 - **子專案路徑**：`./GYM5B-shortcut-key/`
 - **主題簡介**：模擬軍用主控室的主控制器，允許將鍵盤按鍵 (`a-z`) 靈活綁定至坦克與通訊設備等裝置操作或重置功能，並透過指令模式完美支援 Undo (還原)、Redo (重做) 以及多步驟指令巨集 (Macro)。
 - **詳細說明**：請參考 [GYM5B README](./GYM5B-shortcut-key/README.md)
+
+### 7. 狀態模式——二維地圖冒險遊戲
+- **子專案路徑**：`./GYM5C-map-game/`
+- **主題簡介**：在隨機生成的二維地圖上，主角與怪物輪流移動、攻擊並拾取寶物（無敵星星、毒藥、加速藥水、補血罐、任意門、惡魔果實、王者之印）。角色會因寶物或受傷進入無敵、中毒、加速、恢復、混亂、蓄力、爆發、瞬身等狀態，並透過狀態模式將各狀態的行為與持續回合、狀態轉換封裝於獨立的 State 類別中，讓新增狀態時不需修改角色本身。
+- **詳細說明**：請參考 [GYM5C README](./GYM5C-map-game/README.md)
 
 ---
 
