@@ -21,6 +21,7 @@
 | [`GYM5-rpg/`](./GYM5-rpg/) | **真・RPG 之對戰遊戲 (魔王題)** | 策略 / 狀態 / 觀察者 / 責任鏈 (複合設計模式) |
 | [`GYM6A-friends-relationship-analyzer/`](./GYM6A-friends-relationship-analyzer/) | **好友關係分析器** | 轉接器模式 (Adapter Pattern) |
 | [`GYM6B-employee-database/`](./GYM6B-employee-database/) | **【延遲載入】員工資料表存取** | 代理人模式 (Proxy Pattern) |
+| [`GYM6C-logger/`](./GYM6C-logger/) | **日誌框架** | 複合模式 (Composite Pattern) |
 
 ---
 
@@ -75,6 +76,11 @@
 - **子專案路徑**：`./GYM6B-employee-database/`
 - **主題簡介**：為可能多達上千萬筆的員工資料表設計存取工具。透過位移索引檔直接跳到指定列讀取，避免記憶體耗盡；並在不修改既有 `Database`、`Employee` 設計的前提下，以虛擬代理實現下屬的延遲載入 (Lazy Initialization)，以保護代理實現密碼保護。
 - **詳細說明**：請參考 [GYM6B README](./GYM6B-employee-database/README.md)
+
+### 11. 複合模式——日誌框架
+- **子專案路徑**：`./GYM6C-logger/`
+- **主題簡介**：開發一個支援父子階層的日誌框架。日誌器可以設定分級門檻、輸出器與訊息佈置，未設定的部分繼承父日誌器。以複合模式實作可巢狀組合的複合輸出器，以策略模式抽換訊息佈置，讓擴充新的輸出器或排版時都不需修改既有程式碼，並支援以 JSON 設定檔建立整棵日誌器樹。
+- **詳細說明**：請參考 [GYM6C README](./GYM6C-logger/README.md)
 
 ---
 
