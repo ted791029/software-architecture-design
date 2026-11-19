@@ -20,6 +20,7 @@
 | [`GYM5C-map-game/`](./GYM5C-map-game/) | **二維地圖冒險遊戲** | 狀態模式 (State Pattern) |
 | [`GYM5-rpg/`](./GYM5-rpg/) | **真・RPG 之對戰遊戲 (魔王題)** | 策略 / 狀態 / 觀察者 / 責任鏈 (複合設計模式) |
 | [`GYM6A-friends-relationship-analyzer/`](./GYM6A-friends-relationship-analyzer/) | **好友關係分析器** | 轉接器模式 (Adapter Pattern) |
+| [`GYM6B-employee-database/`](./GYM6B-employee-database/) | **【延遲載入】員工資料表存取** | 代理人模式 (Proxy Pattern) |
 
 ---
 
@@ -69,6 +70,11 @@
 - **子專案路徑**：`./GYM6A-friends-relationship-analyzer/`
 - **主題簡介**：開發一個能分析共同好友與兩人之間連結 (Connectivity) 的好友關係分析器。在完全不修改 Client 端介面、同事小華的 `SuperRelationshipAnalyzer` 與第三方套件 JGraphT 的前提下，透過轉接器模式銜接彼此不相容的介面與腳本格式，並重複利用既有能力實現 Client 的意圖。
 - **詳細說明**：請參考 [GYM6A README](./GYM6A-friends-relationship-analyzer/README.md)
+
+### 10. 代理人模式——【延遲載入】員工資料表存取
+- **子專案路徑**：`./GYM6B-employee-database/`
+- **主題簡介**：為可能多達上千萬筆的員工資料表設計存取工具。透過位移索引檔直接跳到指定列讀取，避免記憶體耗盡；並在不修改既有 `Database`、`Employee` 設計的前提下，以虛擬代理實現下屬的延遲載入 (Lazy Initialization)，以保護代理實現密碼保護。
+- **詳細說明**：請參考 [GYM6B README](./GYM6B-employee-database/README.md)
 
 ---
 
