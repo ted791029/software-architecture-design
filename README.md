@@ -22,6 +22,7 @@
 | [`GYM6A-friends-relationship-analyzer/`](./GYM6A-friends-relationship-analyzer/) | **好友關係分析器** | 轉接器模式 (Adapter Pattern) |
 | [`GYM6B-employee-database/`](./GYM6B-employee-database/) | **【延遲載入】員工資料表存取** | 代理人模式 (Proxy Pattern) |
 | [`GYM6C-logger/`](./GYM6C-logger/) | **日誌框架** | 複合模式 (Composite Pattern) |
+| [`GYM6-prescriber-system/`](./GYM6-prescriber-system/) | **處方診斷系統** | 門面模式 (Facade Pattern) |
 
 ---
 
@@ -81,6 +82,11 @@
 - **子專案路徑**：`./GYM6C-logger/`
 - **主題簡介**：開發一個支援父子階層的日誌框架。日誌器可以設定分級門檻、輸出器與訊息佈置，未設定的部分繼承父日誌器。以複合模式實作可巢狀組合的複合輸出器，以策略模式抽換訊息佈置，讓擴充新的輸出器或排版時都不需修改既有程式碼，並支援以 JSON 設定檔建立整棵日誌器樹。
 - **詳細說明**：請參考 [GYM6C README](./GYM6C-logger/README.md)
+
+### 12. 門面模式——處方診斷系統
+- **子專案路徑**：`./GYM6-prescriber-system/`
+- **主題簡介**：為醫院開發處方診斷系統的核心模組。診斷器以隊列依序處理多位用戶的診斷要求，並以責任鏈模式比對新冠肺炎、有人想你了、睡眠呼吸中止症等診斷規則，讓維護者能從外部擴充新規則。再以門面模式提供單一入口，讓用戶只需 1～3 行程式就能完成「載入資料 → 診斷 → 建立病例 → 匯出 JSON / CSV」的完整流程。
+- **詳細說明**：請參考 [GYM6 README](./GYM6-prescriber-system/README.md)
 
 ---
 
